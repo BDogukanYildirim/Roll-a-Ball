@@ -10,11 +10,13 @@ public class CameraControl : MonoBehaviour
     void Start()
     {
         distence = transform.position - ball.transform.position;
+        //Camera ile Ball nesneleri arasındaki başlangıc mesafesini hesaplıyor.
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position = ball.transform.position + distence;
+        //Camera ve Ball nesneleri arasındaki mesafeyi sabit tutuyor
     }
 }
